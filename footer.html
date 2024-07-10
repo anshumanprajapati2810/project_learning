@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<style>
+
+/* CSS for Footer */
+footer {
+  background-color: lightseagreen;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-container .footer-content p a:link,
+.footer-container .footer-content p a:visited,
+.footer-container .footer-content p a:hover,
+.footer-container .footer-content p a:active,
+.footer-container .footer-links p a:link,
+.footer-container .footer-links p a:visited,
+.footer-container .footer-links p a:hover,
+.footer-container .footer-links p a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-content,
+.footer-links,
+.footer-social,
+.footer-about,
+.footer-contact,
+.footer-terms {
+  margin: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.hero {
+  background: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.social-icons a .fab,
+.social-icons a .fas {
+  line-height: 40px;
+  font-size: 20px;
+  z-index: 10;
+  position: relative;
+}
+
+.social-icons a::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-25deg, lightseagreen, lightyellow);
+  position: absolute;
+  transition: 0.5s;
+}
+
+.social-icons a:hover::after {
+  top: 0;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a.email:hover {
+  color: #d44638;
+}
+
+.social-icons a.facebook:hover {
+  color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  color: #1da1f2;
+}
+
+.social-icons a.linkedin:hover {
+  color: #0077b5;
+}
+
+.social-icons a.instagram:hover {
+  color: #e1306c;
+}
+
+</style>
+<body>
+    <footer>
+        <div className="footer-container">
+          <div className="footer-content">
+            <h3>LINKS</h3>
+            <p><a href="/home">Home</a></p>
+            <p><a href="/products">Products</a></p>
+            <p><a href="/about">About</a></p>
+            <p><a href="/contact">Contact</a></p>
+          </div>
+          <div className="footer-links">
+            <h3>Useful Links</h3>
+            <p><a href="/terms">Terms & Conditions</a></p>
+            <p><a href="/privacy">Privacy Policy</a></p>
+            <p><a href="/shipping">Shipping Policy</a></p>
+            <p><a href="/refund">Refund Policy</a></p>
+          </div>
+          <div className="footer-about">
+            <h3>Contact Us</h3>
+            <p>Email: info@mysite.com</p>
+            <p>Tel: 123-456-7890</p>
+            <p>500 Terry Francine Street, San Francisco, CA 94158</p>
+          </div>
+          <div className="hero">
+            <h3>SOCIAL</h3>
+            <div className="social-icons">
+              <a href="https://facebook.com" className="social-icon facebook"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com" className="social-icon twitter"><i className="fab fa-twitter"></i></a>
+              <a href="https://linkedin.com" className="social-icon linkedin"><i className="fab fa-linkedin-in"></i></a>
+              <a href="https://instagram.com" className="social-icon instagram"><i className="fab fa-instagram"></i></a>
+              <a href="mailto:info@example.com" className="social-icon email"><i className="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div className="footer-copy">
+          <h4>Copyright &copy; Shreeji International&trade;</h4>
+        </div>
+      </footer>
+</body>
+</html>
